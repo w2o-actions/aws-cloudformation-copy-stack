@@ -1,0 +1,38 @@
+{
+  "name": "w2o-actions-aws-cloudformation-copy-stack",
+  "version": "0.1.0",
+  "description": "Copy one AWS CloudFormation stack template and parameters to another, with overrides",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **.js",
+    "package": "ncc build index.js -o dist",
+    "test": "npm run lint && jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w2o-actions/aws-cloudformation-copy-stack.git"
+  },
+  "keywords": [
+    "W2O",
+    "AWS",
+    "GitHub",
+    "Actions",
+    "JavaScript",
+    "CloudFormation"
+  ],
+  "author": "W2O Group",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/w2o-actions/aws-cloudformation-copy-stack/issues"
+  },
+  "homepage": "https://github.com/w2o-actions/aws-cloudformation-copy-stack#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "aws-sdk": "^2.800.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3"
+  }
+}

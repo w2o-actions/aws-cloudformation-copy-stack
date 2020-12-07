@@ -1,0 +1,21 @@
+name: '"AWS CloudFormation Copy Stack" Action For GitHub Actions'
+description: 'Copy the template and parameters from one CloudFormation stack to another, with overrides'
+branding:
+  icon: 'cloud'
+  color: 'blue'
+inputs:
+  source-stack-name:
+    description: >-
+      The name of the CloudFormation stack from which to copy data.
+    required: true
+  target-stack-name:
+    description: >-
+      The name of the CloudFormation stack to which to copy data.
+    required: true
+  parameter-overrides:
+    description: >-
+      A JSON object containing any desired parameter overrides.
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
